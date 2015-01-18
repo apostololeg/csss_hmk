@@ -1,16 +1,23 @@
 define(
     [
         'jquery',
-        'core/blah'
+        'core/engine'
     ],
-    function($, Blah) {
+    function($, Engine) {
 
-        // $(document).on('deviceready', function() {
-        //     console.log('deviceready');
+        function App() {
+            this.engine = new Engine($('.canvas').eq(0));
+        }
 
-            var blah = new Blah($('.blah'));
+        $.extend(App.prototype, {
 
-        // });
+            add: function(elem) {
+                this.engine.build(elem)
+            }
+
+        });
+
+        return App;
 
     }
 );

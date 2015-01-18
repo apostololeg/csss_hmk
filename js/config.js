@@ -2,7 +2,8 @@ require.config({
     paths: {
         core: "core",
         jquery:  "lib/jquery",
-        modernizr: "lib/modernizr"
+        modernizr: "lib/modernizr",
+        gsap: "lib/gsap"
         // tap: "lib/tap",
         // ua: "lib/ua",
         // slider: "lib/slider"

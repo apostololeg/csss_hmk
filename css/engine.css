@@ -1,0 +1,80 @@
+.bg
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle, rgba(143, 166, 166, 0.27) 0%, #fff 41%) no-repeat;
+}
+
+.hole
+{
+    overflow: hidden;
+    box-shadow: inset 0 0 2px rgba(26, 155, 139, 0.5);
+}
+
+.hole,
+.canvas,
+.env-in,
+.env-out
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.ring
+{
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+}
+
+.wrap
+{
+    position: absolute;
+    left: 0;
+}
+
+.elem
+{
+    position: absolute;
+}
+
+
+.env-in
+{
+    width: 200px;
+    height: 200px;
+    margin: -100px;
+
+    background: -webkit-linear-gradient(right bottom, #ebebeb 0%, #fff 100%);
+    box-shadow: 0 0 40px rgb(83, 195, 193);
+    border-radius: 50%;
+    font-size: 28px;
+    text-align: center;
+    font-family: Impact;
+    color: rgb(236, 236, 236);
+    text-shadow: 1px 1px 0 rgba(255,255,255,.9);
+    box-sizing: border-box;
+    display: flex;
+    vertical-align: middle;
+    line-height: 100%;
+    flex-basis:;
+}
+
+.hole,
+.env-out
+{
+    width: 282px;
+    height: 282px;
+    margin: -142px;
+}
+
+.env-out
+{
+
+}
